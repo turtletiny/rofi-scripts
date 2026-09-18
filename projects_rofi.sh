@@ -16,7 +16,7 @@ choice="$(
     | sort -rn \
     | cut -d' ' -f2- \
     | sed "s|^$PROJECTS_DIR/||" \
-    | rofi -dmenu -i -p "Projects:" -no-show-icons
+    | rofi -dmenu -i -p " Projects:" -no-show-icons
 )"
 
 [ -n "$choice" ] || exit 0
